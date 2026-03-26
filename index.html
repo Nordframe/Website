@@ -233,8 +233,7 @@ footer{position:relative;z-index:1;border-top:1px solid var(--border);padding:28
       <h1>Karsten<br><em>Skåla Ek</em><span class="dim">— portefølje</span></h1>
       <p class="hero-desc">Selvlært Microsoft-spesialist med erfaring fra norsk offentlig sektor. Bygger kompetanse innen Azure, Entra ID og Intune — ett lab-prosjekt av gangen.</p>
       <div class="hero-actions">
-        <a href="#lab" class="btn-primary">Se lab-prosjekter →</a>
-        <a href="#cv" class="btn-ghost">Les CV</a>
+        <a href="lab.html" class="btn-primary">Se lab-prosjekter →</a>
       </div>
       <div class="hero-stats">
         <div><div class="stat-num">3+</div><div class="stat-label">ÅRS ERFARING</div></div>
@@ -349,114 +348,45 @@ footer{position:relative;z-index:1;border-top:1px solid var(--border);padding:28
     <h2>Praktiske øvelser &amp; oppsett</h2>
   </div>
   <div class="lab-grid">
-    <a href="azure-storage.html" class="lab-card reveal reveal-d1">
+    <a href="azure-lab.html" class="lab-card reveal reveal-d1">
       <div class="lab-card-stripe stripe-beginner"></div>
       <div class="lab-card-top">
-        <div><div class="lab-card-title">Azure Storage Account</div><div class="lab-card-sub">blob · azure files · sas · rbac</div></div>
+        <div><div class="lab-card-title">Azure lab-miljø fra scratch</div><div class="lab-card-sub">vnet · nsg · vm · rbac · defender · monitor</div></div>
         <span class="diff-badge diff-beginner">Nybegynner</span>
       </div>
-      <div class="lab-card-desc">Opprettet Storage Account med blob-containere, Azure Files fileshare og SAS-token for begrenset tilgang.</div>
+      <div class="lab-card-desc">Bygget et komplett Azure-miljø fra bunnen av: nettverk, identitet, VM, Defender for Cloud og Log Analytics.</div>
       <div class="lab-card-footer">
-        <div class="lab-card-dots"><span class="dot-item"><span class="dot dot-teal"></span>Blob</span><span class="dot-item"><span class="dot dot-blue"></span>Files</span><span class="dot-item"><span class="dot dot-amber"></span>AZ-104</span></div>
+        <div class="lab-card-dots"><span class="dot-item"><span class="dot dot-teal"></span>Azure</span><span class="dot-item"><span class="dot dot-amber"></span>AZ-104</span></div>
         <span class="lab-card-arrow">→</span>
       </div>
     </a>
-    <a href="azure-resource-locks.html" class="lab-card reveal reveal-d2">
-      <div class="lab-card-stripe stripe-beginner"></div>
-      <div class="lab-card-top">
-        <div><div class="lab-card-title">Resource Locks</div><div class="lab-card-sub">locks · denyaction · governance</div></div>
-        <span class="diff-badge diff-beginner">Nybegynner</span>
-      </div>
-      <div class="lab-card-desc">Satt opp Delete-locks og DenyAction-policy for å beskytte lab-miljøet mot utilsiktet sletting.</div>
-      <div class="lab-card-footer">
-        <div class="lab-card-dots"><span class="dot-item"><span class="dot dot-teal"></span>Locks</span><span class="dot-item"><span class="dot dot-blue"></span>DenyAction</span><span class="dot-item"><span class="dot dot-amber"></span>AZ-104</span></div>
-        <span class="lab-card-arrow">→</span>
-      </div>
-    </a>
-    <a href="azure-key-vault.html" class="lab-card reveal reveal-d3">
-      <div class="lab-card-stripe stripe-beginner"></div>
-      <div class="lab-card-top">
-        <div><div class="lab-card-title">Azure Key Vault</div><div class="lab-card-sub">kv-nf-lab-01 · secrets · rbac</div></div>
-        <span class="diff-badge diff-beginner">Nybegynner</span>
-      </div>
-      <div class="lab-card-desc">Opprettet Key Vault med RBAC-modellen, lagret secrets og hentet dem via PowerShell.</div>
-      <div class="lab-card-footer">
-        <div class="lab-card-dots"><span class="dot-item"><span class="dot dot-teal"></span>Key Vault</span><span class="dot-item"><span class="dot dot-blue"></span>Secrets</span><span class="dot-item"><span class="dot dot-amber"></span>AZ-104</span></div>
-        <span class="lab-card-arrow">→</span>
-      </div>
-    </a>
-    <a href="azure-pim.html" class="lab-card reveal reveal-d1">
+    <a href="azure-pim.html" class="lab-card reveal reveal-d2">
       <div class="lab-card-stripe stripe-intermediate"></div>
       <div class="lab-card-top">
-        <div><div class="lab-card-title">PIM — just-in-time tilgang</div><div class="lab-card-sub">pim · entra id p2</div></div>
+        <div><div class="lab-card-title">PIM — just-in-time tilgang</div><div class="lab-card-sub">pim · entra id p2 · eligible roles</div></div>
         <span class="diff-badge diff-intermediate">Middels</span>
       </div>
-      <div class="lab-card-desc">Konfigurert PIM med eligible-roller som aktiveres kun ved behov med MFA og begrunnelse.</div>
+      <div class="lab-card-desc">Global Administrator som Eligible-rolle — aktiveres kun ved behov med MFA og begrunnelse.</div>
       <div class="lab-card-footer">
-        <div class="lab-card-dots"><span class="dot-item"><span class="dot dot-teal"></span>PIM</span><span class="dot-item"><span class="dot dot-blue"></span>Zero Trust</span><span class="dot-item"><span class="dot dot-amber"></span>SC-300</span></div>
+        <div class="lab-card-dots"><span class="dot-item"><span class="dot dot-teal"></span>Entra ID</span><span class="dot-item"><span class="dot dot-amber"></span>SC-300</span></div>
         <span class="lab-card-arrow">→</span>
       </div>
     </a>
-    <a href="lab-logg.html" class="lab-card reveal reveal-d2">
-      <div class="lab-card-stripe stripe-intermediate"></div>
+    <a href="nordform-lab.html" class="lab-card reveal reveal-d3">
+      <div class="lab-card-stripe" style="background:linear-gradient(90deg,var(--teal),var(--purple));"></div>
       <div class="lab-card-top">
-        <div><div class="lab-card-title">Conditional Access</div><div class="lab-card-sub">entra id · business premium lab</div></div>
-        <span class="diff-badge diff-intermediate">Middels</span>
+        <div><div class="lab-card-title">NordForm AS — scenariobasert serie</div><div class="lab-card-sub">25 laber · azure · m365 · zero trust</div></div>
+        <span class="diff-badge" style="background:rgba(167,139,250,0.10);color:#a78bfa;border:1px solid rgba(167,139,250,0.25);">Serie</span>
       </div>
-      <div class="lab-card-desc">CA-policyer som blokkerer tilgang fra utenfor Norge, krever MFA ved risiko og håndhever compliant device-krav.</div>
+      <div class="lab-card-desc">Bygg hele Microsoft-infrastrukturen til et fiktivt norsk konsulentfirma — fra blank slate til Zero Trust.</div>
       <div class="lab-card-footer">
-        <div class="lab-card-dots"><span class="dot-item"><span class="dot dot-teal"></span>Entra ID</span><span class="dot-item"><span class="dot dot-blue"></span>Zero Trust</span><span class="dot-item"><span class="dot dot-amber"></span>SC-300</span></div>
+        <div class="lab-card-dots"><span class="dot-item"><span class="dot dot-teal"></span>AZ-104</span><span class="dot-item"><span class="dot dot-blue"></span>SC-300</span><span class="dot-item"><span class="dot dot-amber"></span>MD-102</span></div>
         <span class="lab-card-arrow">→</span>
       </div>
     </a>
-    <a href="intune-compliance.html" class="lab-card reveal reveal-d3">
-      <div class="lab-card-stripe stripe-beginner"></div>
-      <div class="lab-card-top">
-        <div><div class="lab-card-title">Intune device compliance</div><div class="lab-card-sub">intune · business premium lab</div></div>
-        <span class="diff-badge diff-beginner">Nybegynner</span>
-      </div>
-      <div class="lab-card-desc">Compliance-policyer for Windows koblet mot Conditional Access. Testet med en personlig Windows-PC.</div>
-      <div class="lab-card-footer">
-        <div class="lab-card-dots"><span class="dot-item"><span class="dot dot-teal"></span>Intune</span><span class="dot-item"><span class="dot dot-blue"></span>Entra ID</span><span class="dot-item"><span class="dot dot-amber"></span>MD-102</span></div>
-        <span class="lab-card-arrow">→</span>
-      </div>
-    </a>
-    <a href="azure-bastion.html" class="lab-card reveal reveal-d1">
-      <div class="lab-card-stripe stripe-beginner"></div>
-      <div class="lab-card-top">
-        <div><div class="lab-card-title">Azure Bastion</div><div class="lab-card-sub">bastion · rdp · sikker tilkobling</div></div>
-        <span class="diff-badge diff-beginner">Nybegynner</span>
-      </div>
-      <div class="lab-card-desc">Sikker VM-tilkobling via nettleser uten å eksponere port 3389. Fjernet RDP-regelen i NSG etterpå.</div>
-      <div class="lab-card-footer">
-        <div class="lab-card-dots"><span class="dot-item"><span class="dot dot-teal"></span>Bastion</span><span class="dot-item"><span class="dot dot-blue"></span>NSG</span><span class="dot-item"><span class="dot dot-amber"></span>AZ-104</span></div>
-        <span class="lab-card-arrow">→</span>
-      </div>
-    </a>
-    <a href="azure-monitor.html" class="lab-card reveal reveal-d2">
-      <div class="lab-card-stripe stripe-intermediate"></div>
-      <div class="lab-card-top">
-        <div><div class="lab-card-title">Azure Monitor — Alert Rules</div><div class="lab-card-sub">monitor · action group · metric alerts</div></div>
-        <span class="diff-badge diff-intermediate">Middels</span>
-      </div>
-      <div class="lab-card-desc">Metric alert rule på CPU-bruk for vm-lab-01 med e-postvarsling via Action Group.</div>
-      <div class="lab-card-footer">
-        <div class="lab-card-dots"><span class="dot-item"><span class="dot dot-teal"></span>Monitor</span><span class="dot-item"><span class="dot dot-blue"></span>Alerts</span><span class="dot-item"><span class="dot dot-amber"></span>AZ-104</span></div>
-        <span class="lab-card-arrow">→</span>
-      </div>
-    </a>
-    <a href="azure-policy.html" class="lab-card reveal reveal-d3">
-      <div class="lab-card-stripe stripe-intermediate"></div>
-      <div class="lab-card-top">
-        <div><div class="lab-card-title">Azure Policy</div><div class="lab-card-sub">policy · compliance · governance</div></div>
-        <span class="diff-badge diff-intermediate">Middels</span>
-      </div>
-      <div class="lab-card-desc">Opprettet og tilordnet policy-definisjoner for å håndheve tags og begrense ressurser til Norway East.</div>
-      <div class="lab-card-footer">
-        <div class="lab-card-dots"><span class="dot-item"><span class="dot dot-teal"></span>Policy</span><span class="dot-item"><span class="dot dot-blue"></span>Governance</span><span class="dot-item"><span class="dot dot-amber"></span>AZ-104</span></div>
-        <span class="lab-card-arrow">→</span>
-      </div>
-    </a>
+  </div>
+  <div style="margin-top:24px;" class="reveal">
+    <a href="lab.html" class="btn-ghost">Se alle 11 prosjekter →</a>
   </div>
 </section>
 
